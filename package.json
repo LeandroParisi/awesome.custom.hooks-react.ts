@@ -1,7 +1,6 @@
 {
   "name": "awesome.custom.hooks.react-ts",
   "version": "0.1.0",
-  "private": true,
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
   "pre-commit": [
