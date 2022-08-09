@@ -1,0 +1,16 @@
+{
+  "preset": "ts-jest",
+  "coverageDirectory": "./coverage",
+  "resetMocks": true,
+  "clearMocks": true,
+  "testTimeout": 10000,
+  "globalSetup": "./src/tests/integratedTests/Setup/global-setup.ts",
+  "globalTeardown": "./src/tests/integratedTests/Setup/global-teardown.ts",
+  "testPathIgnorePatterns": ["/lib/", "/node_modules/", "/build/"],
+  "modulePathIgnorePatterns": [
+  ],
+  "collectCoverage": true,
+  "collectCoverageFrom": [
+    "src/**/*.ts"
+  ]
+}
