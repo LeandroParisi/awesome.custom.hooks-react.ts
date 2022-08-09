@@ -38,5 +38,6 @@
     "src/**/*.test.tsx",
     "src/**/*.stories.tsx",
     ".storybook/stories",
+    "src/Tests"
   ],
 }
