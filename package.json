@@ -1,5 +1,5 @@
 {
-  "name": "TEMPLATE.react.ts.package",
+  "name": "awesome.custom.hooks.react-ts",
   "version": "0.1.0",
   "private": true,
   "main": "lib/cjs/index.js",
@@ -10,14 +10,15 @@
   "scripts": {
     "dev": "npm run storybook",
     "test": "echo 'tests should are yet to be created'",
-    "build": "npm run lint && rollup -c",
+    "build": "npm run build:cleanup && npm run generate:index && npm run lint && rollup -c",
+    "build:cleanup": "rm -f ./lib",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags",
     "lint": "eslint --fix",
-    "generate:index": "cti -n -e Tests ./src",
+    "generate:index": "cti -n ./src -e Tests --withoutbackup",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
