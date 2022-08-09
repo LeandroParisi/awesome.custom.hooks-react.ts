@@ -11,7 +11,7 @@
     "dev": "npm run storybook",
     "test": "echo 'tests should are yet to be created'",
     "build": "npm run build:cleanup && npm run generate:index && npm run lint && rollup -c",
-    "build:cleanup": "rm -f ./lib",
+    "build:cleanup": "rm -rf ./lib",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
